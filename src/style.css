@@ -1,0 +1,64 @@
+@import url("./font-face.css");
+
+body{
+	background-color: #141414;
+	font-family: 'Circular', sans-serif;
+	padding: 0 2%;
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	color: white;
+}
+
+/* 
+nav .profile h1 {
+	margin-left: 10px;
+	font-size: 15px;
+
+} */
+
+nav .profile {
+	display: flex;
+	align-items: center;
+}
+
+nav.menu-nav ul li.btn{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav.menu-nav ul li.btn a{
+	color: #C4BEB5;
+	text-decoration: none;
+	background-color: #141414;
+	padding: 10px;
+}
+
+nav.menu-nav ul li.btn:hover a{
+	color: #141414;
+	background-color: white;
+	transition: 0.3s all;
+
+}
+
+.content{
+	color: white;
+	margin: 4%;
+	margin-top: 5%;
+	max-width: 80%;
+}
+
+.content h1{
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Circular', serif;
+	font-size: 5vw;
+}
+
