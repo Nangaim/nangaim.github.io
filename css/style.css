@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https: //files.bdph.me/reset.css");
+:root {
+  --clr-dark: #141414;
+  --clr-light: #FAFAFA;
+  --clr-gray: #313337;
+  --clr-dark-green: #667C82;
+  --clr-light-green: #A9CEC2;
+}
+
+body {
+  font-family: "Raleway",sans-serif;
+  min-height: 100vh;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 100px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  padding: 0 40px;
+}
+
+.navBar .profil img {
+  width: 50px;
+  height: 50px;
+}
+
+#home {
+  min-height: 100vh;
+  z-index: -3;
+}
+
+#home .intro {
+  position: absolute;
+  top: 35%;
+  left: 63%;
+}
+
+#home .intro h2 {
+  width: 366px;
+  height: 56px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 55px;
+  margin: 10px;
+}
+
+#home .intro h3 {
+  width: 417px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  margin: 10px;
+}
+
+#home .intro p {
+  width: 348px;
+  height: 81px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 10px;
+}
+
+#home .nangaim {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 36px;
+  top: 55%;
+  left: 17%;
+}
+
+#home .nangaim span {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 86px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+#home .rectangleUp {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  left: 40%;
+  top: 0px;
+  background-color: var(--clr-dark-green);
+  z-index: -1;
+}
+
+#home .retangleDown1 {
+  position: absolute;
+  background-color: var(--clr-gray);
+  height: 755px;
+  left: 20%;
+  top: 200px;
+  width: 500px;
+  z-index: -2;
+}
+
+#home .retangleDown2 {
+  position: absolute;
+  background-color: var(--clr-gray);
+  width: 1045px;
+  height: 484px;
+  left: 45%;
+  top: 200px;
+  z-index: -2;
+}
+
+#about {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 350px;
+}
+
+#about .content .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+#about .content .me .aboutMe h2 {
+  width: 397px;
+  height: 56px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 55px;
+  margin: 0;
+}
+
+#about .content .me .aboutMe .aboutMe_description p {
+  width: 480px;
+  height: 220px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .aboutMe .aboutMe_curriculum p {
+  width: 480px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .content .me .curriculum h2 {
+  width: 258px;
+  height: 56px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 55px;
+  margin: 0;
+}
+
+#about .content .me .curriculum .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 0 0;
+  gap: 90px;
+}
+
+#about .content .me .curriculum .second .year {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .second .place .place_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .second .place .place_name P {
+  margin: 0;
+}
+
+#about .content .me .curriculum .second .place .place_location {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .second .place .place_location p {
+  margin: 0;
+}
+
+#about .content .me .curriculum .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 30px 0 0 0;
+  gap: 90px;
+}
+
+#about .content .me .curriculum .first .year {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .first .place .place_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .first .place .place_name P {
+  margin: 0;
+}
+
+#about .content .me .curriculum .first .place .place_location {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#about .content .me .curriculum .first .place .place_location p {
+  margin: 0;
+}
+
+#about .content .content_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+#about .content .content_image img {
+  width: 320px;
+  height: 491px;
+}
+
+#about .content .content_image a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+#about .rectangleUp {
+  position: absolute;
+  width: 500px;
+  height: 650px;
+  left: 50%;
+  top: 1260px;
+  background-color: var(--clr-dark-green);
+  z-index: -1;
+}
+
+#about .retangleDown1 {
+  position: absolute;
+  background-color: var(--clr-gray);
+  width: 1300px;
+  height: 600px;
+  left: 0;
+  top: 1115px;
+  z-index: -2;
+}
+
+#about .retangleDown2 {
+  position: absolute;
+  background-color: var(--clr-gray);
+  width: 602px;
+  height: 760px;
+  left: 1300px;
+  top: 955px;
+  z-index: -2;
+}
+/*# sourceMappingURL=style.css.map */

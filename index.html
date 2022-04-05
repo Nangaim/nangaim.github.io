@@ -3,53 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="icon" href="/img/logo.svg" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Thierry Maignan</title>
   </head>
   <body>
-    <header class="header" data-component="Menu">
-      <!-- Menu de navigation -->
-      <nav class="menu-nav">
-        <div class="profil">
-          <h1>Thierry Maignan</h1>
+    <nav id="nav" class="navBar">
+      <div class="profil">
+          <img src="/img/logo.svg" alt="logo">
+      </div>
+    </nav>
+    
+    <section id="home">
+      <div class="intro">
+        <h2>Thierry Maignan</h2>
+        <h3>Développeur Web Junior</h3>
+        <p>Étudiant à HETIC en première année Bachelor Web, en recherche de Stage et Alternance</p>
+      </div>
+      
+      <div class="nangaim">
+        <span>NAN</span>
+        <span>GAIM</span>
+      </div>
+      <div class="rectangleUp"></div>
+      <div class="retangleDown1"></div>
+      <div class="retangleDown2"></div>
+    </section>
+    <section id="about">
+      <div class="content">
+        <div class="me">
+          <div class="aboutMe">
+            <h2>A PROPOS DE MOI</h2>
+            <span class="aboutMe_description">
+              <p>Hello ! Je m’appelle Thierry Maignan, j’ai 18 ans, développeur Web junior. Je suis étudient à Hetic et je suis
+                actuellement à la recherche d'un stage en développement web. Au lycée, j'ai suivi la spécialité Numérique et sciences
+                Informatique qui m'a orienté vers le web, j'ai ensuite rejoint Hetic au sein duquel j'ai pu découvrir les différents
+                aspects du développement web, ce qui m'a dirigé vers le développement front-end.
+              </p>
+            </span>
+            <span class="aboutMe_curriculum"><p>Si vous êtes intéressé par mon profil, vous trouverez ci-dessous, les différents moyens de me contacter.</p></span>
+          </div>
+          <div class="curriculum">
+            <h2>Curriculum</h2>
+            <div class="second">
+              <span class="year">
+                <p>2021-2024</p>
+              </span>
+              <div class="place">
+                <span class="place_name"><p>HETIC</p></span>
+                <span class="place_location"><p>Montreuil, France</p></span>
+              </div>
+            </div>
+            
+            <div class="first">
+              <span class="year">
+                <p>2018-2021</p>
+              </span>
+              <div class="place">
+                <span class="place_name"><p>Lycée Saint-Exupéry</p></span>
+                <span class="place_location"><p>Mantes-la-Jolie, France</p></span>
+              </div>
+            </div>
+          </div>
+            
         </div>
-        <ul class="nav-links">
-          <li class="btn">
-            <a href="#"> Accueil </a>
-          </li>
-
-          <li class="btn">
-            <a href="#"> About</a>
-          </li>
-
-          <li class="btn">
-            <a href="#"> Projets </a>
-          </li>
-
-          <li class="btn">
-            <a href="#"> Contact </a>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <div class="content_image">
+          <img src="/img/about_image.JPG" alt="me">
+          <a href="">Téléchargez mon CV</a>
         </div>
-      </nav>
-      <script src="app.js"></script>
-    </header>
-
-    <div class="content">
-      <h1>Hello, my name is Thierry Maignan</h1>
-      <h2>I am a junior web developer</h2>
-    </div>
-
-    <div class="footer">
+      </div>
+      <div class="rectangleUp"></div>
+      <div class="retangleDown1"></div>
+      <div class="retangleDown2"></div>
+    </section>
+      
+    <!-- <div class="footer">
       <footer>
         <p>&copy; Thierry Maignan, 2021-2022</p>
       </footer>
-    </div>
+    </div> -->
     
   </body>
 </html>
