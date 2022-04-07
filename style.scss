@@ -206,7 +206,7 @@ body {
         }
         .first{
           display: flex;
-          align-content: center;
+          
           margin: 30px 0 0 0;
           gap: 90px;
           .year {
@@ -280,36 +280,6 @@ body {
       
     }
   }
-
-  .rectangleUp {
-    position: absolute;
-    width: 50vh;
-    height: 65vh;
-    left: 50%;
-    top: 1260px;
-    background-color: var(--clr-dark-green);
-    z-index: -1;
-  }
-
-  .retangleDown1 {
-    position: absolute;
-    background-color: var(--clr-gray);
-    width: 135vh;
-    height: 65vh;
-    left: 0;
-    top: 1115px;
-    z-index: -2;
-  }
-
-  .retangleDown2 {
-    position: absolute;
-    background-color: var(--clr-gray);
-    width: 63.5vh;
-    height: 81vh;
-    left: 68.4%;
-    top: 955px;
-    z-index: -2;
-  }
 }
 
 #projects{
@@ -380,8 +350,6 @@ body {
       gap: 72px;
       h2{
         margin: 0;
-        width: 409px;
-        height: 56px;
         font-weight: 900;
         font-size: 2.87rem;
         line-height: 3.43rem;
@@ -573,6 +541,7 @@ body {
     }
   
     .rectangleUp {
+      display: none;
       position: absolute;
       width: 20vh;
       height: 30vh;
@@ -583,6 +552,7 @@ body {
     }
   
     .retangleDown1 {
+      display: none;
       position: absolute;
       background-color: var(--clr-gray);
       height: 30vh;
@@ -593,6 +563,7 @@ body {
     }
   
     .retangleDown2 {
+      display: none;
       position: absolute;
       background-color: var(--clr-gray);
       width: 26.2vh;
@@ -604,7 +575,6 @@ body {
   }
 
   #about {
-    width: 100%;
     min-height: 100vh;
     min-width: 100vw;
     display: block;
@@ -613,7 +583,7 @@ body {
     .content {
       position: relative;
       display: block;
-      width: 100%;
+      width: 90%;
   
       .me {
         width: 100%;
@@ -650,167 +620,168 @@ body {
   
           
           }
-        }
-  
-        .curriculum {
-          display: flex;
-          align-content: center;
-          flex-direction: column;
-  
-          h2 {
-            font-weight: 900;
-            font-size: 2.87rem;
-            line-height: 3.43rem;
-            margin: 0;
-          }
-  
-          .second {
-            display: flex;
-            gap: 90px;
-  
-            .year {
-              font-weight: 500;
-              font-size: 1.125rem;
-              line-height: 1.68rem;
-            }
-  
-            .place {
-              .place_name {
-                font-weight: 700;
-                font-size: 1.125rem;
-                line-height: 1.68rem;
-  
-                P {
-                  margin: 0;
-                }
-              }
-  
-              .place_location {
-                font-weight: 400;
-                font-size: 1.125rem;
-                line-height: 1.68rem;
-  
-                p {
-                  margin: 0;
-                }
-              }
-            }
-  
-          }
-  
-          .first {
-            display: flex;
-            align-content: center;
-            margin: 30px 0 0 0;
-            gap: 90px;
-  
-            .year {
-              font-weight: 500;
-              font-size: 1.125rem;
-              line-height: 1.68rem;
-            }
-  
-            .place {
-              .place_name {
-                font-weight: 700;
-                font-size: 1.125rem;
-                line-height: 1.68rem;
-  
-                P {
-                  margin: 0;
-                }
-              }
-  
-              .place_location {
-                font-weight: 400;
-                font-size: 1.125rem;
-                line-height: 1.68rem;
-  
-                p {
-                  margin: 0;
-                }
-              }
-            }
-          }
-        }
-  
-  
+        }    
       }
+      .curriculum{
+        margin-bottom: 20px;
+        
+        .first{
+          display: block;
+          
+          .year{
+            p{
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+
+  #contacts {
+    min-height: 100vh;
+    padding: 0 0 0 20px;
   
-      .content_image {
+    .all {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      width: 100%;
+  
+      .skills {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        gap: 72px;
+        width: 100%;
   
-        img {
-          width: 320px;
-          height: 491px;
+        h2 {
+          font-weight: 900;
+          font-size: 2.5rem;
+          line-height: 1.2em;
+        }
+  
+        .content {
+          gap: 40px;
+  
+          .up {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+  
+            span {
+              position: relative;
+              display: inline-block;
+              font-weight: 700;
+              font-size: 1rem;
+            }
+  
+          }
+  
+          .down {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+  
+            span {
+              font-weight: 700;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+  
+      .contacts {
+        width: 80%;
+  
+        h2 {
+          margin: 0;
+          font-weight: 900;
+          font-size: 2.5rem;
+          line-height: 1.715rem;
+        }
+  
+        p {
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 1.68rem;
         }
   
         a {
-          position: relative;
           font-weight: 700;
-          font-size: 1.125rem;
-          line-height: 1.68rem;
+          font-size: 1.5rem;
+          line-height: 1.715rem;
           text-decoration: none;
           color: var(--clr-light);
-  
-          &:after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 3px;
-            transform: scaleX(0);
-            background-color: var(--clr-light-green);
-  
-            transition: transform 0.3s;
-          }
-  
-          &:hover {
-            &:after {
-              transform: scaleX(1);
-            }
-          }
         }
   
+        .contacts_link {
+          margin-top: 36px;
+  
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+  
+            li {
+              list-style: none;
+  
+              .medias-btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                border: 3px solid var(--clr-dark-green);
+                background-color: var(--clr-dark-green);
+                margin: 0;
+  
+                .icones {
+                  position: relative;
+                  transition: 0.5s;
+                  z-index: 3;
+                }
+  
+                &:hover .icones {
+                  // color: var(--clr-light);
+                  transform: rotateY(360deg);
+                }
+              }
+  
+              .medias-btn::before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--clr-light-green);
+                transition: .5s;
+                z-index: 2;
+              }
+  
+              .medias-btn:hover::before {
+                top: 0;
+              }
+            }
+          }
+  
+        }
       }
     }
   
-    .rectangleUp {
-      position: absolute;
-      width: 50vh;
-      height: 65vh;
-      left: 50%;
-      top: 1260px;
-      background-color: var(--clr-dark-green);
-      z-index: -1;
-    }
-  
-    .retangleDown1 {
-      position: absolute;
-      background-color: var(--clr-gray);
-      width: 135vh;
-      height: 65vh;
-      left: 0;
-      top: 1115px;
-      z-index: -2;
-    }
-  
-    .retangleDown2 {
-      position: absolute;
-      background-color: var(--clr-gray);
-      width: 63.5vh;
-      height: 81vh;
-      left: 68.4%;
-      top: 955px;
-      z-index: -2;
-    }
   }
-
 
 
 

@@ -244,8 +244,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   margin: 30px 0 0 0;
   gap: 90px;
 }
@@ -324,36 +322,6 @@ body {
 #about .content .content_image a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-#about .rectangleUp {
-  position: absolute;
-  width: 50vh;
-  height: 65vh;
-  left: 50%;
-  top: 1260px;
-  background-color: var(--clr-dark-green);
-  z-index: -1;
-}
-
-#about .retangleDown1 {
-  position: absolute;
-  background-color: var(--clr-gray);
-  width: 135vh;
-  height: 65vh;
-  left: 0;
-  top: 1115px;
-  z-index: -2;
-}
-
-#about .retangleDown2 {
-  position: absolute;
-  background-color: var(--clr-gray);
-  width: 63.5vh;
-  height: 81vh;
-  left: 68.4%;
-  top: 955px;
-  z-index: -2;
 }
 
 #projects {
@@ -459,8 +427,6 @@ body {
 
 #contacts .all .skills h2 {
   margin: 0;
-  width: 409px;
-  height: 56px;
   font-weight: 900;
   font-size: 2.87rem;
   line-height: 3.43rem;
@@ -682,6 +648,7 @@ body {
     -webkit-text-stroke: 2px white;
   }
   #home .rectangleUp {
+    display: none;
     position: absolute;
     width: 20vh;
     height: 30vh;
@@ -691,6 +658,7 @@ body {
     z-index: -1;
   }
   #home .retangleDown1 {
+    display: none;
     position: absolute;
     background-color: var(--clr-gray);
     height: 30vh;
@@ -700,6 +668,7 @@ body {
     z-index: -2;
   }
   #home .retangleDown2 {
+    display: none;
     position: absolute;
     background-color: var(--clr-gray);
     width: 26.2vh;
@@ -709,7 +678,6 @@ body {
     z-index: -2;
   }
   #about {
-    width: 100%;
     min-height: 100vh;
     min-width: 100vw;
     display: block;
@@ -718,7 +686,7 @@ body {
   #about .content {
     position: relative;
     display: block;
-    width: 100%;
+    width: 90%;
   }
   #about .content .me {
     width: 100%;
@@ -755,151 +723,159 @@ body {
     font-size: 1.125rem;
     line-height: 1.68rem;
   }
-  #about .content .me .curriculum {
+  #about .content .curriculum {
+    margin-bottom: 20px;
+  }
+  #about .content .curriculum .first {
+    display: block;
+  }
+  #about .content .curriculum .first .year p {
+    white-space: nowrap;
+  }
+  #contacts {
+    min-height: 100vh;
+    padding: 0 0 0 20px;
+  }
+  #contacts .all {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 100px;
+    width: 100%;
   }
-  #about .content .me .curriculum h2 {
+  #contacts .all .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 72px;
+    width: 100%;
+  }
+  #contacts .all .skills h2 {
     font-weight: 900;
-    font-size: 2.87rem;
-    line-height: 3.43rem;
-    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2em;
   }
-  #about .content .me .curriculum .second {
+  #contacts .all .skills .content {
+    gap: 40px;
+  }
+  #contacts .all .skills .content .up {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 90px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
   }
-  #about .content .me .curriculum .second .year {
+  #contacts .all .skills .content .up span {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  #contacts .all .skills .content .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+  }
+  #contacts .all .skills .content .down span {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  #contacts .all .contacts {
+    width: 80%;
+  }
+  #contacts .all .contacts h2 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.715rem;
+  }
+  #contacts .all .contacts p {
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.68rem;
   }
-  #about .content .me .curriculum .second .place .place_name {
+  #contacts .all .contacts a {
     font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
+    font-size: 1.5rem;
+    line-height: 1.715rem;
+    text-decoration: none;
+    color: var(--clr-light);
   }
-  #about .content .me .curriculum .second .place .place_name P {
-    margin: 0;
+  #contacts .all .contacts .contacts_link {
+    margin-top: 36px;
   }
-  #about .content .me .curriculum .second .place .place_location {
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
-  }
-  #about .content .me .curriculum .second .place .place_location p {
-    margin: 0;
-  }
-  #about .content .me .curriculum .first {
+  #contacts .all .contacts .contacts_link ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin: 30px 0 0 0;
-    gap: 90px;
-  }
-  #about .content .me .curriculum .first .year {
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
-  }
-  #about .content .me .curriculum .first .place .place_name {
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
-  }
-  #about .content .me .curriculum .first .place .place_name P {
-    margin: 0;
-  }
-  #about .content .me .curriculum .first .place .place_location {
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
-  }
-  #about .content .me .curriculum .first .place .place_location p {
-    margin: 0;
-  }
-  #about .content .content_image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
   }
-  #about .content .content_image img {
-    width: 320px;
-    height: 491px;
+  #contacts .all .contacts .contacts_link ul li {
+    list-style: none;
   }
-  #about .content .content_image a {
+  #contacts .all .contacts .contacts_link ul li .medias-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 10px;
     position: relative;
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.68rem;
-    text-decoration: none;
-    color: var(--clr-light);
-  }
-  #about .content .content_image a:after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    background-color: var(--clr-light-green);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-  }
-  #about .content .content_image a:hover:after {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  #about .rectangleUp {
-    position: absolute;
-    width: 50vh;
-    height: 65vh;
-    left: 50%;
-    top: 1260px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid var(--clr-dark-green);
     background-color: var(--clr-dark-green);
-    z-index: -1;
+    margin: 0;
   }
-  #about .retangleDown1 {
+  #contacts .all .contacts .contacts_link ul li .medias-btn .icones {
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  #contacts .all .contacts .contacts_link ul li .medias-btn:hover .icones {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  #contacts .all .contacts .contacts_link ul li .medias-btn::before {
+    content: "";
     position: absolute;
-    background-color: var(--clr-gray);
-    width: 135vh;
-    height: 65vh;
+    top: 100%;
     left: 0;
-    top: 1115px;
-    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-light-green);
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 2;
   }
-  #about .retangleDown2 {
-    position: absolute;
-    background-color: var(--clr-gray);
-    width: 63.5vh;
-    height: 81vh;
-    left: 68.4%;
-    top: 955px;
-    z-index: -2;
+  #contacts .all .contacts .contacts_link ul li .medias-btn:hover::before {
+    top: 0;
   }
   #about .content {
     -ms-flex-wrap: wrap;
