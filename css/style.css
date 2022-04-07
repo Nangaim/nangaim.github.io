@@ -99,8 +99,8 @@ body {
 
 #home .rectangleUp {
   position: absolute;
-  width: 500px;
-  height: 600px;
+  width: 50vh;
+  height: 60vh;
   left: 40%;
   top: 0px;
   background-color: var(--clr-dark-green);
@@ -110,18 +110,18 @@ body {
 #home .retangleDown1 {
   position: absolute;
   background-color: var(--clr-gray);
-  height: 755px;
+  height: 80vh;
   left: 20%;
   top: 200px;
-  width: 500px;
+  width: 51vh;
   z-index: -2;
 }
 
 #home .retangleDown2 {
   position: absolute;
   background-color: var(--clr-gray);
-  width: 1045px;
-  height: 484px;
+  width: 110.5vh;
+  height: 50vh;
   left: 45%;
   top: 200px;
   z-index: -2;
@@ -298,6 +298,7 @@ body {
 }
 
 #about .content .content_image a {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -305,10 +306,32 @@ body {
   color: var(--clr-light);
 }
 
+#about .content .content_image a:after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: var(--clr-light-green);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#about .content .content_image a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 #about .rectangleUp {
   position: absolute;
-  width: 500px;
-  height: 650px;
+  width: 50vh;
+  height: 65vh;
   left: 50%;
   top: 1260px;
   background-color: var(--clr-dark-green);
@@ -318,8 +341,8 @@ body {
 #about .retangleDown1 {
   position: absolute;
   background-color: var(--clr-gray);
-  width: 1300px;
-  height: 600px;
+  width: 135vh;
+  height: 65vh;
   left: 0;
   top: 1115px;
   z-index: -2;
@@ -328,15 +351,79 @@ body {
 #about .retangleDown2 {
   position: absolute;
   background-color: var(--clr-gray);
-  width: 602px;
-  height: 760px;
-  left: 1300px;
+  width: 63.5vh;
+  height: 81vh;
+  left: 68.4%;
   top: 955px;
   z-index: -2;
 }
 
 #projects {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .glider-contain {
+  width: 60.5% !important;
+}
+
+#projects .glider-contain h2 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 55px;
+  margin: 0 0 50px 0;
+}
+
+#projects .glider-contain p {
+  margin: 0 0 150px 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+#projects .glider-contain .glider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .glider-contain .glider .slide a {
+  text-decoration: none;
+  color: var(--clr-light);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31px;
+  margin-top: 10px;
+}
+
+#projects .glider-contain .glider .slide p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+#projects .glider-contain .glider .slide .avatar {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contacts {
@@ -432,10 +519,16 @@ body {
   line-height: 27px;
 }
 
-#contacts .all .contacts h3 {
+#contacts .all .contacts a {
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+#contacts .all .contacts .contacts_link {
+  margin-top: 36px;
 }
 
 #contacts .all .contacts .contacts_link ul {

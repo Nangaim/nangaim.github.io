@@ -86,8 +86,8 @@ body {
   
   .rectangleUp{
     position: absolute;
-    width: 500px;
-    height: 600px;
+    width: 50vh;
+    height: 60vh;
     left: 40%;
     top: 0px;
     background-color: var(--clr-dark-green);
@@ -97,18 +97,18 @@ body {
   .retangleDown1{
     position: absolute;
     background-color: var(--clr-gray);
-    height: 755px;
+    height: 80vh;
     left: 20%;
     top: 200px;
-    width: 500px;
+    width: 51vh;
     z-index: -2;
   }
   
   .retangleDown2{
     position: absolute;
     background-color: var(--clr-gray);
-    width: 1045px;
-    height: 484px;
+    width: 110.5vh;
+    height: 50vh;
     left: 45%;
     top: 200px;
     z-index: -2;
@@ -253,19 +253,40 @@ body {
         height: 491px;
       }
       a{
+        position: relative;
         font-weight: 700;
         font-size: 18px;
         line-height: 27px;
         text-decoration: none;
         color: var(--clr-light);
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 3px;
+          transform: scaleX(0);
+          background-color: var(--clr-light-green);
+        
+          transition: transform 0.3s;
+        }
+        
+        &:hover {
+          &:after {
+            transform: scaleX(1);
+          }
+        }
       }
+      
     }
   }
 
   .rectangleUp {
     position: absolute;
-    width: 500px;
-    height: 650px;
+    width: 50vh;
+    height: 65vh;
     left: 50%;
     top: 1260px;
     background-color: var(--clr-dark-green);
@@ -275,8 +296,8 @@ body {
   .retangleDown1 {
     position: absolute;
     background-color: var(--clr-gray);
-    width: 1300px;
-    height: 600px;
+    width: 135vh;
+    height: 65vh;
     left: 0;
     top: 1115px;
     z-index: -2;
@@ -285,9 +306,9 @@ body {
   .retangleDown2 {
     position: absolute;
     background-color: var(--clr-gray);
-    width: 602px;
-    height: 760px;
-    left: 1300px;
+    width: 63.5vh;
+    height: 81vh;
+    left: 68.4%;
     top: 955px;
     z-index: -2;
   }
@@ -295,6 +316,54 @@ body {
 
 #projects{
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .glider-contain{
+    width: 60.5% !important;
+    h2{
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 55px;
+      margin: 0 0 50px 0;
+    }
+    p{
+      margin: 0 0 150px 0;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31px;
+    }
+    
+    .glider{
+      .slide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+          text-decoration: none;
+          color: var(--clr-light);
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 31px;
+          margin-top: 10px;
+        }
+        p{
+          margin: 0;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 31px;
+          margin-bottom: 10px;
+        }
+        .avatar{
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+          
+        }
+      }
+    }
+  }
+  
 }
 
 #contacts{
@@ -357,13 +426,15 @@ body {
         font-size: 18px;
         line-height: 27px;
       }
-      h3{
+      a {        
         font-weight: 700;
         font-size: 36px;
         line-height: 43px;
+        text-decoration: none;
+        color: var(--clr-light);
       }
       .contacts_link{
-        
+        margin-top: 36px;
         ul{
           display: flex;
           align-items: center;
@@ -420,5 +491,9 @@ body {
       }
     }
   }
+
+}
+ 
+@media screen and (min-width: 1280px) {
 
 }
