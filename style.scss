@@ -86,7 +86,7 @@ body {
   
   .rectangleUp{
     position: absolute;
-    width: 50vh;
+    width: 30vw;
     height: 60vh;
     left: 40%;
     top: 0px;
@@ -100,20 +100,23 @@ body {
     height: 80vh;
     left: 20%;
     top: 200px;
-    width: 51vh;
+    width: 25vw;
     z-index: -2;
   }
   
   .retangleDown2{
     position: absolute;
     background-color: var(--clr-gray);
-    width: 110.5vh;
+    width: 54.4vw;
     height: 50vh;
     left: 45%;
     top: 200px;
     z-index: -2;
   }
 }
+
+
+
 
 
 
@@ -126,7 +129,6 @@ body {
   align-items: center;
 
   .content{
-    position: absolute;
     display: flex;
     gap: 35%;
     width: 60%;
@@ -145,24 +147,23 @@ body {
           margin: 0;
         }
         .aboutMe_description{
-          p {
-            width: 480px;
-            height: 220px;
-            font-weight: 500;
-            font-size: 1.125rem;
-            line-height: 1.68rem;
+          width: 480px;
+          height: 220px;
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 1.68rem;
           
-          }
+          
         }
         .aboutMe_curriculum{
-          p {
-            width: 480px;
-            height: 50px;
-            font-weight: 500;
-            font-size: 1.125rem;
-            line-height: 1.68rem;
           
-          }
+          width: 480px;
+          height: 50px;
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 1.68rem;
+          
+          
         }
       }
       .curriculum{
@@ -422,7 +423,7 @@ body {
               align-items: center;
               margin-right: 10px;
               position: relative;
-              // overflow: hidden;
+              overflow: hidden;
               cursor: pointer;
               border: 3px solid var(--clr-dark-green);
               background-color: var(--clr-dark-green);
@@ -461,6 +462,33 @@ body {
     }
   }
 
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.reveal [class*="reveal-"]{
+  transform: translateY(60px);
+  opacity: 0;
+  
+}
+
+.reveal-visible [class*="reveal-"] {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.reveal-visible .reveal-2{
+  transition-delay: .1s;
+}
+.reveal-visible .reveal-3{
+  transition-delay: .2s;
 }
  
 @media screen and (max-width: 640px) {
