@@ -27,7 +27,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
-  padding: 0 40px;
+}
+
+.navBar .profil {
+  margin-left: 40px;
 }
 
 .navBar .profil img {
@@ -36,9 +39,7 @@ body {
 }
 
 #home {
-  position: relative;
-  min-height: 100vh;
-  z-index: -3;
+  height: 100vh;
 }
 
 #home .intro {
@@ -86,7 +87,7 @@ body {
           justify-content: center;
   gap: 36px;
   top: 55%;
-  left: 20%;
+  left: 10%;
 }
 
 #home .nangaim span {
@@ -110,8 +111,8 @@ body {
 #home .retangleDown1 {
   position: absolute;
   background-color: var(--clr-gray);
-  height: 80vh;
-  left: 20%;
+  height: 79vh;
+  left: 10%;
   top: 200px;
   width: 25vw;
   z-index: -2;
@@ -120,9 +121,9 @@ body {
 #home .retangleDown2 {
   position: absolute;
   background-color: var(--clr-gray);
-  width: 54.4vw;
+  width: 60vw;
   height: 50vh;
-  left: 45%;
+  left: 35%;
   top: 200px;
   z-index: -2;
 }
@@ -132,9 +133,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 120px;
+  margin-right: 150px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,8 +144,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 35%;
-  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 #about .content .me {
@@ -160,6 +164,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+
+#about .content .me .aboutMe {
+  width: 100%;
 }
 
 #about .content .me .aboutMe h2 {
@@ -324,6 +332,7 @@ body {
 
 #projects {
   min-height: 100vh;
+  margin: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,10 +342,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#projects .glider-contain {
-  width: 60.5% !important;
 }
 
 #projects .glider-contain h2 {
@@ -398,7 +403,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 0 0 20%;
+  margin: 120px;
 }
 
 #contacts .all {

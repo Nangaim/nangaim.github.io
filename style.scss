@@ -23,9 +23,8 @@ body {
   position: absolute;
   align-items: center;
   top: 0;
-  padding: 0 40px;
   .profil{
-    // padding: 40px 0px 0px 40px;
+    margin-left: 40px;
       img{
         width: 50px;
         height: 50px;
@@ -33,9 +32,7 @@ body {
   }
 }
 #home{
-  position: relative;
-  min-height: 100vh;
-  z-index: -3;
+  height: 100vh;
   .intro{
     position: absolute;
     top: 35%;
@@ -71,7 +68,7 @@ body {
     justify-content: center;
     gap: 36px;
     top: 55%;
-    left: 20%;
+    left: 10%;
     span{
       // width: 261px;
       // height: 87px;
@@ -97,8 +94,8 @@ body {
   .retangleDown1{
     position: absolute;
     background-color: var(--clr-gray);
-    height: 80vh;
-    left: 20%;
+    height: 79vh;
+    left: 10%;
     top: 200px;
     width: 25vw;
     z-index: -2;
@@ -107,9 +104,9 @@ body {
   .retangleDown2{
     position: absolute;
     background-color: var(--clr-gray);
-    width: 54.4vw;
+    width: 60vw;
     height: 50vh;
-    left: 45%;
+    left: 35%;
     top: 200px;
     z-index: -2;
   }
@@ -124,13 +121,15 @@ body {
 #about{
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  margin-left: 120px;
+  margin-right: 150px;
   align-items: center;
 
   .content{
     display: flex;
-    gap: 35%;
-    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
     
     .me{
       display: flex;
@@ -138,7 +137,7 @@ body {
       justify-content: center;
       gap: 30px;
       .aboutMe{
-        
+        width: 100%;
         h2{
           font-weight: 900;
           font-size: 2.87rem;
@@ -284,11 +283,12 @@ body {
 
 #projects{
   min-height: 100vh;
+  margin: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   .glider-contain{
-    width: 60.5% !important;
+    // width: 60.5% !important;
     h2{
       font-weight: 900;
       font-size: 2.87rem;
@@ -338,7 +338,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 0 0 20%;
+  margin: 120px;
   
   .all{
     display: flex;
