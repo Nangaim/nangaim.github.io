@@ -137,7 +137,7 @@ body {
       justify-content: center;
       gap: 30px;
       .aboutMe{
-        width: 100%;
+        width: 480px;
         h2{
           font-weight: 900;
           font-size: 2.87rem;
@@ -145,8 +145,6 @@ body {
           margin: 0;
         }
         .aboutMe_description{
-          width: 480px;
-          height: 220px;
           font-weight: 500;
           font-size: 1.125rem;
           line-height: 1.68rem;
@@ -155,8 +153,7 @@ body {
         }
         .aboutMe_curriculum{
           
-          width: 480px;
-          height: 50px;
+          
           font-weight: 500;
           font-size: 1.125rem;
           line-height: 1.68rem;
@@ -494,8 +491,10 @@ body {
   .navBar {
     padding: 0 20px;
     position: relative;
+    
   
     .profil {
+      margin: 0;
       img {
         width: 40px;
         height: 40px;
@@ -605,6 +604,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     display: block;
+    margin: 0;
     
   
     .content {
@@ -670,9 +670,14 @@ body {
 
   }
 
+  #projects{
+    margin: 20px;
+  }
+
   #contacts {
     min-height: 100vh;
     padding: 0 0 0 20px;
+    margin: 0;
   
     .all {
       display: flex;
