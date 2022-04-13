@@ -486,6 +486,24 @@ body {
 .reveal-visible .reveal-3{
   transition-delay: .2s;
 }
+
+@media screen and (max-width: 1200px){
+  #home{
+    .intro{
+      left: 50%;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  #home{
+    .intro{
+      left: 30%;
+    }
+    .nangaim{
+      display: none;
+    }
+  }
+}
  
 @media screen and (max-width: 640px) {
   .navBar {
